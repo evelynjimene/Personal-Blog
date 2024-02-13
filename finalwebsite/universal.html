@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- a link element that refers to an external style sheet -->
+  <link rel="stylesheet" href="mystyle.css">
+  <meta charset="UTF-8">
+  <title>Universal Studios</title>
+  <!-- change h1 when clicked on -->
+  <script>
+    function changeh1(id) {
+      id.innerHTML = "o(*￣︶￣*)o";
+    }
+  </script>
+</head>
+
+<body>
+  <!-- link navigation to other pages in header -->
+  <header>
+    <ul id="navbar">
+      <li><a href="orlandotrip.html">Orlando Trip</a></li>
+      <li><a class="active" href="universal.html">Universal Studios</a></li>
+      <li><a href="floridasceneries.html">Florida Sceneries</a></li>
+      <li><a href="orlandoselfies.html">Selfies</a></li>
+      <li><a href="food.html">Food</a></li>
+      <li><a href="daytonabeach.html">Daytona Beach</a></li>
+    </ul>
+  </header>
+  <h1 id="box" onclick="changeh1(this)">Our Family Trip to Universal Studios</h1>
+  <aside class="minislide">
+    <img src="universal/20220804_174057.jpg" alt="Slide 4">
+    <img src="universal/20220804_111928.jpg" alt="Slide 3">
+
+    <img src="universal/20220810_112632.jpg" alt="Slide 2">
+
+    <img src="universal/20220804_181142.jpg" alt="Slide 1">
+  </aside>
+  <!-- allows for margin on top of the p element -->
+  <aside class="clearfix"></aside>
+  <!-- summary of trip to Universal Studios -->
+  <p>Here are a few photos from our trip to Universal Studios last year: We had
+    an amazing time and we plan on going to Florida again in the near future :)
+  </p>
+
+  <!-- 
+Evelyn Jimenez
+03/07/23
+6:55pm
+universal.html 
+ -->
+
+</body>
+
+</html>

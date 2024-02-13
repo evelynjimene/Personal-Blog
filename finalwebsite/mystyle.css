@@ -1,0 +1,306 @@
+/* the back ground color for the body */
+body {
+  background-color: #606c38;
+}
+
+#back-img {
+  background-image: url("back-img.jpg");
+  color: white;
+}
+
+/* changes background for the article elements */
+.responsive {
+  background-color: #dda15e;
+}
+
+/* align the h1 element to the center */
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  color: #081c15;
+}
+
+p {
+  font-size: large;
+}
+
+/* styling for the navigation bar so that it is not 
+an ul and change background color */
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fefae0;
+}
+
+/* nav bar floats to the left */
+li {
+  float: left;
+}
+
+/* styling for the link names */
+li a {
+  display: block;
+  color: black;
+  /* text-align: left; */
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+/* highlights when you hover over */
+li a:hover:not(.active) {
+  background-color: #bc6c25;
+}
+
+/* the active page will have a different background color*/
+.active {
+  background-color: #F8BD7F;
+}
+
+/* border of the img will be blcak when it is hovered over*/
+aside.gallery:hover {
+  border: 1px solid #777;
+}
+
+/* styling of the img border*/
+aside.gallery {
+  border: 1px solid #ccc;
+}
+
+/* styling of the dimensions of the imgs*/
+aside.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+/* styling of the descriptions for each img */
+aside.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* include padding and border in width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* how much space an img can occupy width-wise 
+    imgs are aligned
+    padding between imgs
+ */
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+/* thought that media queries was pretty cool; rearranges images depending on
+the size of the screen */
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 50%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+/* allows space between the img gallery and paragraph */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* changes opacity of the img when hovered over */
+img:hover {
+  opacity: 0.5;
+}
+
+/* center the form and width of the form */
+.my-form-style {
+  max-width: 450px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* spacing between text bars */
+.my-form-style label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* format span Name, Email, Phone, Message */
+.my-form-style label>span {
+  float: left;
+  width: 100px;
+  color: #777;
+  font-weight: bold;
+  font-size: 13px;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+/* background color of form and padding*/
+.my-form-style fieldset {
+  background: #e8e8e4;
+  padding: 40px;
+}
+
+/* width and heighth to textbox */
+input[type="text"],
+input[type="email"],
+input[type="message"],
+input[type="phone"],
+.my-form-style textarea {
+  width: 250px;
+  height: 30px;
+}
+
+/* formatting legends Personal, Message */
+.my-form-style fieldset legend {
+  color: black;
+  background: #a3b18a;
+  border-top: 1px solid #777;
+  border-left: 1px solid #777;
+  border-right: 1px solid #777;
+}
+
+/* formatting if there is no input */
+input:invalid {
+  box-shadow: 0 0 5px 1px #c17c74;
+}
+
+input:focus:invalid {
+  box-shadow: none;
+}
+
+/* table formatting, centering */
+table {
+  width: 75%;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+caption {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/* background color of even and odd rows */
+table tbody tr:nth-child(even) {
+  background-color: #a3b18a;
+}
+
+table tr:nth-child(odd) {
+  background-color: #fefae0;
+}
+
+/* formatting table heading and data */
+table td,
+table th {
+  padding: 8px 8px;
+  display: table-cell;
+  text-align: left;
+}
+
+table th:first-child,
+table td:first-child,
+table th:first-child,
+table td:first-child {
+  padding-left: 16px;
+}
+
+/* formatting heading to be center aligned and bigger size*/
+#table-heading {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+/* formatting slide show center, heighth and width */
+.minislide {
+  width: 50%;
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.minislide img {
+  position: absolute;
+  animation: fling-minislide 20s infinite;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes fling-minislide {
+  25% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+}
+
+.minislide img:nth-child(4) {
+  animation-delay: 0s;
+}
+
+.minislide img:nth-child(3) {
+  animation-delay: 5s;
+}
+
+.minislide img:nth-child(2) {
+  animation-delay: 10s;
+}
+
+/* visual effects for h1 */
+
+#box {
+  border: 2px solid black;
+  text-align: center;
+  padding: 1em;
+  color: darkkhaki;
+  box-shadow: .1em .2em darkolivegreen;
+  filter: drop-shadow(.05em .05em .1em darkgrey);
+}
+
+/* css animation for gallery */
+
+@keyframes change-color {
+  from {
+    background-color: #dda15e;
+  }
+
+  to {
+    background-color: #a3b18a;
+  }
+}
+
+.responsive {
+  animation-name: change-color;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+
+/*
+Evelyn Jimenez
+02/02/23
+6:21pm
+mystyle.css 
+
+*/

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- a link element that refers to an external style sheet -->
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="admin.js"></script>
+    <meta charset="UTF-8">
+</head>
+
+<body style="background-color: peachpuff;">
+    <!-- vacation form -->
+    <h3> Form received</h3>
+    <aside class="my-form-style">
+        <form id="myForm">
+            <fieldset style="background-color: blanchedalmond;">
+                <legend style="background-color: aliceblue;">Personal</legend>
+                <label for="first"><span>First Name</span></label>
+                <!-- the required maxlength for name is 140 -->
+                <input type="text" id="first" readonly>
+                <label for="last"><span>Last Name </span></label>
+                <!-- the required maxlength for name is 140 -->
+                <input type="text" id="last" readonly>
+                <label for="email"><span>Email</span></label>
+                <!-- max length for email is 100 -->
+                <input type="email" id="email" readonly>
+                <label for="phone"><span>Phone Number</span></label>
+                <input type="tel" id="phone" readonly>
+            </fieldset>
+            <fieldset>
+                <legend style="background-color: aliceblue;">Message</legend>
+                <label for="message"><span>Message</span></label>
+                <input type="text" id="message" readonly>
+            </fieldset>
+        </form>
+    </aside>
+
+    <!-- 
+Evelyn Jimenez
+02/26/23
+9:20pm
+admin.html
+ -->
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- a link element that refers to an external style sheet -->
+  <title>Orlando Trip</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+  <script src="myscript.js"></script>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <!-- link navigation to other pages in header -->
+  <header>
+    <ul id="navbar">
+      <li><a class="active" href="orlandotrip.html">Orlando Trip</a></li>
+      <li><a href="universal.html">Universal Studios</a></li>
+      <li><a href="floridasceneries.html">Florida Sceneries</a></li>
+      <li><a href="orlandoselfies.html">Selfies</a></li>
+      <li><a href="food.html">Food</a></li>
+      <li><a href="daytonabeach.html">Daytona Beach</a></li>
+    </ul>
+  </header>
+  <h1>Jimenez Orlando Trip</h1>
+  <!-- an img gallery that re arranges on different size screens -->
+  <aside class="responsive">
+    <aside class="gallery">
+      <img src="cats/20220809_113956.jpg" alt="Sleepy" width="600" height="400">
+      <aside class="desc">Luka feeling sleepy in the living area</aside>
+    </aside>
+  </aside>
+
+  <aside class="responsive">
+    <aside class="gallery">
+      <img src="cats/20220810_092815.jpg" alt="Crazy" width="600" height="400">
+      <aside class="desc">Luna being a little crazy</aside>
+    </aside>
+  </aside>
+
+  <aside class="responsive">
+    <aside class="gallery">
+      <img src="cats/20220810_093052.jpg" alt="Model" width="600" height="400">
+      <aside class="desc">Luka being a natural model</aside>
+    </aside>
+  </aside>
+
+  <aside class="responsive">
+    <aside class="gallery">
+      <img src="cats/20220812_120515.jpg" alt="Lazy" width="600" height="400">
+      <aside class="desc">Luna having the time of her life</aside>
+    </aside>
+  </aside>
+  <!-- allows for margin on top of the paragraph -->
+  <aside class="clearfix"></aside>
+  <p>Here is a website for the trip to Orlando. This was the highlight of my summer
+    break last year; we had so much fun at the theme parks as well as eating out and
+    most importantly, bringing the cats along on this magical trip =-) Here are some
+    images of Luna and Luka having fun in Florida
+  </p>
+  <hr>
+  <!-- vacation form -->
+  <h3> Submit vacation ideas in the form below!</h3>
+  <aside class="my-form-style">
+    <form id="myForm">
+      <fieldset>
+        <legend>Personal</legend>
+        <label for="first"><span>First Name <span class="required">*</span></span></label>
+        <!-- the required maxlength for name is 140 -->
+        <input type="text" placeholder="Jane" pattern="[a-zA-Z]*" title="Please enter only alphabets" name="first"
+          id="first" maxlength="100" required>
+        <label for="last"><span>Last Name <span class="required">*</span></span></label>
+        <!-- the required maxlength for name is 140 -->
+        <input type="text" placeholder="Doe" pattern="[a-zA-Z]*" title="Please enter only alphabets" name="last"
+          id="last" maxlength="100" required>
+        <label for="email"><span>Email<span class="required"> *</span></span></label>
+        <!-- max length for email is 100 -->
+        <input type="email" placeholder="janedoe1991@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Enter a valid email address" name="email" id="email" maxlength="100" required>
+        <label for="phone"><span>Phone Number</span></label>
+        <input type="tel" placeholder="999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          title="Please enter a valid number" name="phone" id="phone">
+      </fieldset>
+      <fieldset>
+        <legend>Message</legend>
+        <label for="message"><span>Message <span class="required">*</span></span></label>
+        <!-- required max length for msg box is 140 -->
+        <!-- onchange event - an html element has been changed -->
+        <input type="text" name="message" id="message" onchange="lowerCase()" maxlength="140"
+          pattern="[a-zA-Z][a-zA-Z0-9,.\s]*" title="Only alphabets and numbers allowed" required>
+        <label><span> </span><input type="submit" value="Submit" onclick="myFunction()"></label>
+      </fieldset>
+    </form>
+  </aside>
+
+  <!-- 
+Evelyn Jimenez
+03/07/23
+6:55pm
+orlandotrip.html 
+ -->
+
+</body>
+
+</html>
